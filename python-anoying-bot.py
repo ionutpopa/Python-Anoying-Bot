@@ -26,7 +26,7 @@ with open("vechiul_testament.txt", 'r') as text_to_send: # change vechiul_testam
     for lines in data:
         imputmessenger = driver.find_element_by_xpath("//div[@class='_1mf _1mj']")
         imputmessenger.send_keys(lines)
-        time.sleep(1)
+        time.sleep(60)
         enterMessage = driver.find_element_by_xpath("//a[@class='_30yy _38lh _7kpi']")
         enterMessage.send_keys(Keys.RETURN)
 
